@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+    }
+
+/*
+For this line of code:    
+@media screen and (max-width: 1024px)
+I set the max-width to 1024px because I was working on a wide screen, if you testing it with a narrower screen, you may change it to 600px or less. Because if you use 1024px and open with a smaller screen it may just be a column of elements when you opened it
+
+*/
+    @media screen and (max-width: 1024px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>

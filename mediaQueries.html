@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries Homework</title>
+    <style>
+        .block {
+            width: 300%;
+            height: 200px;
+        }
+
+        .blue {
+            background: lightblue;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .grey {
+            background: grey;
+        }
+
+        .grey_remaining {
+            background: grey;
+        }
+
+
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .yellow {
+                width: 50%;
+                float: left;
+            }
+
+
+            .grey {
+                width: 50%;
+                float: right;
+
+            }
+
+            .grey_remaining {
+                width: 100%;
+                float: left;
+
+            }
+
+
+
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            .yellow {
+                width: 20%;
+                float: left;
+            }
+
+            .grey {
+                width: 80%;
+                float: right;
+            }
+
+            .grey {
+                width: 80%;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="block blue"></div>
+    <div class="block yellow"></div>
+    <div class="block grey"></div>
+    <div class="block grey_remaining"></div>
+</body>
+</html>
