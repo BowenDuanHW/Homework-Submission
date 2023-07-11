@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Development Assignment</title>
+    <style>
+        /* Exercise 1: Using the ::first-line pseudo-element on paragraphs with title="Rush2112" */
+        p[title="Rush2112"]::first-line {
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        /* Exercise 2: Using the ::placeholder pseudo-element with an input element */
+        input::placeholder {
+            font-style: italic;
+            color: darkgray;
+        }
+
+        /* Exercise 3: Using the ::before and ::after pseudo-elements */
+        .quote::before {
+            content: '“';
+        }
+
+        .quote::after {
+            content: '”';
+        }
+
+        /* Exercise 4: Using the ::first-letter pseudo-element on div elements with class="drake" */
+        div.drake::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Exercise 5: Using a different pseudo-element, in this case ::selection */
+        ::selection {
+            background-color: lightblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Exercise 1: Demonstrating the ::first-line pseudo-element -->
+    <p title="Rush2112">Example paragraph No.1. This line should be bold and dark blue.</p>
+    <p title="Rush2112">Example paragraph No.2. This line should also be bold and dark blue.</p>
+    <p title="Rush2112">Example paragraph No.3. This line should be bold and dark blue as well.</p>
+
+    <!-- Exercise 2: Demonstrating the ::placeholder pseudo-element -->
+    <input type="text" placeholder="Input data">
+
+    <!-- Exercise 3: Demonstrating the ::before and ::after pseudo-elements -->
+    <p class="quote">This is a quote.</p>
+
+    <!-- Exercise 4: Demonstrating the ::first-letter pseudo-element -->
+    <div class="drake">Example div No.1. The first letter should be larger and bold.</div>
+    <div class="drake">Example div No.2. The first letter should also be larger and bold.</div>
+    <div class="drake">Example div No.3. The first letter should be larger and bold as well.</div>
+
+    <!-- Exercise 5: Demonstrating the ::selection pseudo-element -->
+    <p>Select some text in this paragraph to see the ::selection pseudo-element in action.</p>
+</body>
+</html>
