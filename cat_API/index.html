@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Breeds</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-3">Search for Cat Images</h1>
+        <form class="mb-5">
+            <div class="form-group">
+                <label for="breeds">Choose a breed:</label>
+                <input class="form-control" list="breeds">
+                <datalist id="breeds">
+                    <!-- Options will be populated here using JavaScript -->
+                </datalist>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div id="images">
+            <!-- Images will be displayed here using JavaScript -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
